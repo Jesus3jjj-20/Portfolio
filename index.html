@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <!--Barra de navegación-->
+  <nav id="menu" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html">
+          <img  src="Images/Logo.png" alt="Logo personal"/>
+      </a>
+
+      <button id="botonHamburguesa" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#opciones">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <!--Enlaces-->
+
+      <div class="collapse navbar-collapse" id="opciones">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#informacionPersonal">ABOUT ME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conocimientos">KNOWLEDGE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#contacto">CONTACT</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Write here" aria-label="Buscar">
+          <button id="botonHeader" class="btn btn-outline-warning me-2" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--Carousel-->
+
+  <div id="intro">
+   
+    <section>
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+  
+  
+          <div class="carousel-item active">
+            <picture >
+              <source src="Images/Carousel1.webp" class="d-block w-100"
+              alt="https://pixabay.com/es/illustrations/digitalizaci%c3%b3n-transformaci%c3%b3n-5140071/">
+
+              <img src="Images/Carousel1.jpg" class="d-block w-100"
+              alt="https://pixabay.com/es/illustrations/digitalizaci%c3%b3n-transformaci%c3%b3n-5140071/">
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source src="Images/Carousel2.webp" class="d-block w-100"
+              alt="https://pixabay.com/es/illustrations/digitalizaci%c3%b3n-transformaci%c3%b3n-tierra-5231610/">
+
+              <img src="Images/Carousel2.jpg" class="d-block w-100"
+              alt="https://pixabay.com/es/illustrations/digitalizaci%c3%b3n-transformaci%c3%b3n-tierra-5231610/">
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source src="Images/Carousel3.webp" class="d-block w-100"
+              alt="https://pixabay.com/es/illustrations/tierra-red-blockchain-globo-3537401/">
+
+              <img src="Images/Carousel3.jpg" class="d-block w-100"
+              alt="https://pixabay.com/es/illustrations/tierra-red-blockchain-globo-3537401/">
+            </picture>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+
+	<div class="container" id="textoHeader">
+        <div class="row">
+			      <div class="col-md-12 text">
+				    <h3>Hello, I am</h3>
+            <h1>Jesús Jiménez</h1>
+            <h4>Web Developer</h4>				
+			      <a class="btn" href="CV/Currículum Vitae.pdf"><i class="fas fa-download"></i>Download CV</a>
+			</div>
+        </div>
+    </div>
+
+    <div class="text" id="textoHeaderMobile">
+          <h3>Hello, I am</h3>
+          <h1>Jesús Jiménez</h1>
+          <h4>Web Developer</h4>				
+          <a class="btn" href="CV/Currículum Vitae.pdf"><i class="fas fa-download"></i>Download CV</a>
+  </div>
+
+</div>
+
+<a class="btn" id="buttonHeader" href="CV/Currículum Vitae.pdf"><i class="fas fa-download"></i>Download CV</a>
+
+
+
+  <!--Sobre mí-->
+
+  <div id="informacionPersonal">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+    <h5>About me</h5>
+    <h2>Who am I?</h2>
+      </div>
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div id="imagenPersonal">
+        <picture>
+            <source src="Images/imagenPersonal.webp" alt="https://pixabay.com/es/vectors/contacto-amigo-icono-empe%c3%b1ar-1293388/"/>
+            <img src="Images/imagenPersonal.jpg" alt="https://pixabay.com/es/vectors/contacto-amigo-icono-empe%c3%b1ar-1293388/"/>
+        </picture>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6" id="informacion">
+        <p>Hello, I'm Jesús, a computer scientist eager to keep learning and growing in the world of new technologies, contact me!</p>
+      </div>
+    </div>
+   </div>
+  </div>
+
+
+
+  <!--Conocimientos-->
+
+  <section id="conocimientos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+			    <h5>Knowledge</h5>
+				<h2>What do I offer?</h2>
+            </div>
+        </div>
+		<div class="row con">
+			<div class="col-md-3 conocimiento">
+				<h6>Web Design</h6>
+				<p>I have completed the higher cycle of DAW, developed several projects and I have the ability to perform this position.</p>
+			</div>
+			<div class="col-md-3 conocimiento">
+				<h6>System administration</h6>
+				<p>I have completed the higher cycle of ASIR, developed several projects and held this position.</p>
+			</div>
+			<div class="col-md-3 conocimiento">
+				<h6>Cybersecurity</h6>
+				<p>In addition to my passion for computer security, I have several degrees that attest to my knowledge of it.</p>
+			</div>
+			<div class="col-md-3 conocimiento">
+				<h6>Network management</h6>
+				<p>Networking is an exciting world that I am immersed in and I have the qualifications to prove it.</p>
+			</div>
+        </div>
+	</div>
+</section>
+
+
+<!--Proyectos-->
+
+<section id="proyectos">
+	<div class="container">
+	    <div class="row">
+            <div class="col-md-12">
+			    <h5>Projects</h5>
+			  	<h2>Featured works</h2>
+            </div>
+        </div>
+		<div class="row">
+			<div class="proyectos-wrapper col-md-12">
+			    <div class="filter-buttons">
+					<div class="button-group filters-button-group">
+						<button class="button ">All</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid">
+			<div class="row">
+				<div class="col-md-4 grid-item ct3 ct4">
+				    <div class="single-proyectos-item">
+            <picture>
+              <source src="Images/Proyecto1.webp" alt="Proyecto personal basado en la creación de un blog con HTML Y CSS"/>
+					    <img src="Images/Proyecto1.jpg" alt="Proyecto personal basado en la creación de un blog con HTML Y CSS"/>
+            </picture>
+					</div>
+					<div class="search">
+					    <a href="Images/Proyecto1.jpg" class="port-view"><i class="fas fa-search-plus"></i></a>
+					</div>
+					<div class="description d-flex">
+					    <p>Blog<br><span>HTML and CSS</span></p>
+					</div>
+				</div>
+				<div class="col-md-4 grid-item ct1">
+					<div class="single-proyectos-item ">
+            <picture>
+              <source src="Images/Proyecto2.webp" alt="Proyecto personal basado en la creación de un mapa interactivo con HTML, CSS, JS, AYAX y PHP"/>
+					    <img src="Images/Proyecto2.jpg" alt="Proyecto personal basado en la creación de un mapa interactivo con HTML, CSS, JS, AYAX y PHP"/>
+            </picture>
+					</div>
+					<div class="search">
+					    <a href="Images/Proyecto2.jpg" class="port-view"><i class="fas fa-search-plus"></i></a>
+					</div>
+					<div class="description d-flex">
+					    <p>Interactive map<br><span>HTML, CSS, JS, AYAX and PHP</span></p>
+
+					</div>
+				</div>
+				<div class="col-md-4 grid-item ct3">
+					<div class="single-proyectos-item">
+            <picture>
+              <source src="Images/Proyecto3.webp" alt="Proyecto personal basado en la creación de un carrito de la compra con HTML, CSS, JS, y PHP"/>
+					    <img src="Images/Proyecto3.jpg" alt="Proyecto personal basado en la creación de un carrito de la compra con HTML, CSS, JS, y PHP"/>
+            </picture>
+					</div>
+					<div class="search">
+					    <a href="Images/Proyecto3.jpg" class="port-view"><i class="fas fa-search-plus"></i></a>
+					</div>
+					<div class="description d-flex">
+					   <p>Shopping cart<br><span>HTML, CSS, JS, and PHP</span></p>
+					</div>
+				</div>
+			</div>	
+    </div>
+    </div>
+</section>
+
+
+<!--Trayectoria-->
+
+<section id="resume">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+        <h5>Training</h5>
+      <h2>Trajectory</h2>
+          </div>
+      </div>
+  <div class="row bios">
+    <div class="col-md-6">
+        <div class="graduate d-flex">
+          <i class="fas fa-graduation-cap"></i><h4>Education</h4>
+      </div>
+      <div class="items">
+        <i class="far fa-circle"></i><h6>Obligatory Secondary Education,<span> (I.E.S Ategua, Córdoba)</span></h6>
+        <span>September 2012 - June 2016</span>
+      </div>	
+      <div class="items">
+        <i class="far fa-circle"></i><h6>Baccalaureate,<span> (I.E.S Ategua, Córdoba)</span></h6>
+        <span>September 2016 - June 2018</span>
+      </div>	
+      <div class="items">
+        <i class="far fa-circle"></i><h6>ASIR,<span> (I.E.S Virgen del Carmen, Jaén)</span></h6>
+        <span>September 2018 - June 2020</span>
+      </div>	
+      <div class="items">
+        <i class="far fa-circle"></i><h6>DAW Bilingual,<span> (I.E.S Virgen del Carmen, Jaén)</span></h6>
+        <span>September 2020 - June 2022</span>
+      </div>	
+    </div>
+
+
+    <div class="col-md-6">
+        <div class="graduate2 d-flex">
+          <i class="fas fa-briefcase"></i><h4>Work experience</h4>
+      </div>
+      <div class="items">
+        <i class="far fa-circle"></i><h6>Computer Systems Administrator</h6>
+        <span>April 2020- June 2020</span>
+        <p>Formación ACMA (Internship contract)<br/>My most outstanding tasks were based on SEO and the creation of a website among others.</p>
+      </div>	
+    </div>
+      </div>
+</section>
+
+
+<!--Contacto-->
+
+<section id="contacto">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well well-sm">
+          <form action="#">
+              <fieldset>
+                  <h5>Contact</h5>
+                  <h2>Contact me</h2>
+
+                  <p id="advertencia">* All fields must be filled in</p>
+                  <div class="input-group mb-3 mt-4">
+                      <span class="input-group-text"><i class="fa fa-user bigicon"></i></span>
+                          <input id="fnombre" name="nombre" type="text" placeholder="Name" class="form-control" pattern="^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü]{3,}[a-zA-ZÑñÁáÉéÍíÓóÚúÜü ]+$" required>
+                  </div>
+
+                  <div class="input-group mb-3">
+                      <span class="input-group-text"><i class="fas fa-at  bigicon"></i></span>
+                          <input id="femail" name="email" type="email" placeholder="Email" class="form-control" pattern="^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü]+[@]{1}[a-zA-ZÑñÁáÉéÍíÓóÚúÜü]+[.]{1}[a-zA-ZÑñÁáÉéÍíÓóÚúÜü]+$" required>
+                  </div>
+
+                  <div class="input-group mb-3">
+                      <span class="input-group-text"><i class="fa fa-phone-square bigicon"></i></span>               
+                          <input id="ftelefono" name="telefono" type="text" placeholder="Phone" class="form-control" pattern="^(6|7|9){1}[0-9]{8}$" required>
+                  </div>
+
+                  <div class="input-group mb-3">
+                      <span class="input-group-text"><i class="fas fa-envelope  bigicon"></i></span>
+                          <textarea class="form-control" id="fmensaje" name="mensaje" placeholder="Message..." rows="7" required></textarea>
+                  </div>
+
+                  <div>
+                          <button type="submit" class="btn btn-primary btn-lg">Send</button>
+                  </div>
+              </fieldset>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Footer-->
+
+<div id="footer" class="container-fluid bg-dark">
+  <div class="row">
+    <div class="col-12  mt-3">
+                <div id="infoFooter" class="row mb-3">
+                    <div class="col-12 col-sm-4">
+                      <span><i class="fas fa-mobile bigiconFooter"></i>&nbsp;&nbsp;(+34) 999 999 999</span>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <span><i class="fas fa-at bigiconFooter"></i>&nbsp;&nbsp;jjimjimn@g.educaand.es</span>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <span><i class="fas fa-map-marker-alt bigiconFooter"></i>&nbsp;&nbsp;P.º de la Estación, 44, 23008 Jaén</span>
+                    </div>
+                </div>
+      </div>
+  </div>
+
+  <div class="row">
+     <div class="col-12">
+        <iframe class="mt-3 mb-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50454.74648809097!2d-3.8318845949956004!3d37.78015700705148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd713cb5302c7%3A0x9cfb2c858b405702!2zSmHDqW4!5e0!3m2!1ses!2ses!4v1646049326676!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+</div>
+
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
